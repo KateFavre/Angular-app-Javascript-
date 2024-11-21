@@ -30,3 +30,7 @@
   justify-content: right; 
   align-items: center; /* using flex to disolay cols*/
 }
+
+svg path:hover {
+    fill: orange; /* Chg color on hover */
+  }

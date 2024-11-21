@@ -10,4 +10,10 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'my-D280';
+
+  handleMouseOver(event:MouseEvent): void {
+    //on mouseover I want to grab the id from the svg path thats being hovered over 
+    const target = event.target as SVGElement; // tells computer to treat the target of the mouse event like an svg element
+    
+  }
 }
