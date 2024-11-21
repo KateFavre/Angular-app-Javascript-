@@ -6,13 +6,14 @@
 </div>
 <div class="container">
     <div class="box">
+      <!-- zybooks 5.9 {{countryName} use ngif -->
          <div class = "info">
-         <ul> Country Name : </ul> <!-- add info using interpolation when we get from api define the data in app.ts file zybooks 5.9 if having trouble {{countryName} use ngif -->
-         <ul> Capital : </ul>
-         <ul> Region : </ul>
-         <ul> Income Level: </ul>
-         <ul> Longitude: </ul>
-         <ul> Latitude: </ul>
+         <ul> Country Name : {{ selectedCountryInfo.name }} </ul> 
+         <ul> Country Capital : {{ selectedCountryInfo.capitalCity }}</ul>
+         <ul> Country Region : {{ selectedCountryInfo.region.value}} </ul>
+         <ul> Income Level : {{ selectedCountryInfo.incomeLevel.value}}</ul>
+         <ul> Longitude: {{ selectedCountryInfo.longitude }}</ul>
+         <ul> Latitude: {{ selectedCountryInfo.latitude }}</ul>
          </div>
     </div>
 <!--adding svg map to html-->
